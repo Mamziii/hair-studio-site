@@ -1,0 +1,392 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* banner */
+#banner {
+  background: linear-gradient(rgba(0, 0, 0.2, 0.1), #250029),
+    url(../img/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.logo {
+  width: 280px;
+  height: 220px;
+  position: absolute;
+  top: 2%;
+  left: 0%;
+}
+
+.banner-text {
+  font-family: "stencil";
+  text-align: center;
+  color: #250029;
+  padding-top: 50px;
+  font-size: 50px;
+}
+
+.banner-text p {
+  font-family: "segoe print";
+  font-size: 40px;
+}
+
+.banner-btns {
+  /* background-color: red; */
+  width: 30%;
+  margin: auto;
+  margin-top: 70px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-btns button {
+  padding: 12px 40px;
+  margin-left: 10px;
+  color: #250029;
+  background-color: transparent;
+  border: 0.5px solid #250029;
+  border-radius: 5px;
+  font-family: "segoe print";
+  font-size: 20px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.banner-btns button:hover {
+  color: #fff;
+  background-color: #250029;
+}
+
+.side-nav {
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  right: -200px;
+  top: 0;
+  background-color: #250029;
+  z-index: 2;
+  transition: 0.2s;
+}
+
+.side-nav nav ul li {
+  list-style: none;
+  margin: 50px 20px;
+}
+
+.side-nav nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "segoe print";
+  display: inline;
+  transition: all 0.4s ease-in-out;
+}
+
+.side-nav nav ul li a:hover {
+  font-size: 20px;
+}
+
+.menu-btn {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  z-index: 3;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.menu {
+  width: 38px;
+  height: 35px;
+}
+
+/* feature */
+
+#feature {
+  width: 100%;
+  padding: 70px 0;
+}
+
+.feature-title {
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.feature-title p {
+  font-family: "stencil";
+  margin: auto;
+  font-size: 60px;
+  color: #250029;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+}
+
+.feature-title h1 {
+  font-family: "segoe print";
+  font-size: 30px;
+}
+
+.feature-box {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+
+.feature-box-text {
+  flex-basis: 50%;
+}
+
+.feature-box-text h1 {
+  font-family: "stencil";
+  margin-bottom: 10px;
+  font-size: 35px;
+  color: #250029;
+}
+
+.feature-box-text p {
+  font-family: "segoe print";
+  font-weight: bold;
+  color: #250029;
+}
+
+.feature-img {
+  flex-basis: 50%;
+  margin: auto;
+}
+
+.feature-img img {
+  width: 70%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #666;
+  cursor: pointer;
+}
+
+/* service */
+
+#service {
+  width: 100%;
+  padding: 70px 0;
+  background: #efefef;
+  border-top: 0.5px solid #250029;
+}
+
+.service-title {
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.service-title p {
+  font-family: "stencil";
+  margin: auto;
+  font-size: 60px;
+  color: #250029;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+}
+
+.service-title h1 {
+  font-family: "segoe print";
+  font-size: 30px;
+}
+
+.service-box {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.service-box-item {
+  flex-basis: 48%;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+  position: relative;
+}
+
+.service-box-item img {
+  width: 100%;
+  border-radius: 7px;
+  box-shadow: 2px 2px 5px #666;
+}
+
+.over-lay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 7px;
+  cursor: pointer;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), #250029);
+  opacity: 0;
+  transition: 0.5s;
+}
+.service-box-item:hover .over-lay {
+  opacity: 1;
+}
+
+.over-lay-text {
+  width: 80%;
+  margin: auto;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+
+.over-lay-text h1 {
+  margin-bottom: 15px;
+  font-family: "stencil";
+}
+
+.over-lay-text p {
+  margin-top: 10px;
+  font-family: "segoe print";
+  font-weight: bold;
+}
+
+hr {
+  height: 2px;
+  background-color: #fff;
+}
+
+/* testimonial */
+
+#testimonial {
+  width: 100%;
+  border-top: 1px solid #250029;
+  padding: 70px 0;
+}
+
+.testimonial-title {
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.testimonial-title p {
+  font-family: "stencil";
+  margin: auto;
+  font-size: 60px;
+  color: #250029;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+}
+
+.testimonial-title h1 {
+  font-family: "segoe print";
+  font-size: 30px;
+}
+
+.comments-box {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.comment {
+  flex-basis: 28%;
+  padding: 10px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #666;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.comment:hover {
+  transform: scale(1.2);
+}
+
+.comment p {
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.person img {
+  width: 50px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.person-info h3 {
+  font-family: sans-serif;
+  font-size: 17px;
+}
+
+/* footer */
+
+#footer {
+  width: 100%;
+  padding: 70px 0;
+  background-color: #efefef;
+  border-top: 1px solid #250029;
+}
+
+.footer-title {
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.footer-title p {
+  font-family: "stencil";
+  margin: auto;
+  font-size: 60px;
+  color: #250029;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+}
+
+.footer-title h1 {
+  font-family: "segoe print";
+  font-size: 30px;
+}
+
+.footer-row {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.left,
+.right {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.footer-row h1 {
+  margin: 10px 0;
+  font-family: sans-serif;
+}
+
+.footer-row p {
+  line-height: 30px;
+  font-family: sans-serif;
+}
